@@ -19,7 +19,7 @@ form.addEventListener('submit', function(e) {
     console.log(valorA);
     console.log(valorB);
     
-    formEValido = validaNumero(valorA.value, valorB.value)
+    formEValido = validaNumero(valorA.valueAsNumber, valorB.valueAsNumber)
     if (formEValido) {
         containerMsgSucesso.innerHTML = mensagemSucesso;
         containerMsgSucesso.style.display = 'block';
